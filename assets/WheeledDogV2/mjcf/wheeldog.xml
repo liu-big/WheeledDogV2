@@ -1,0 +1,87 @@
+<mujoco model="wheeldog">
+  <compiler angle="radian"/>
+
+  <worldbody>
+    <geom size="0.275 0.12 0.06" pos="0 0 -0.04" type="box" rgba="0.752941 0.752941 0.752941 1"/>
+    <body name="FL_H1_L" pos="0.250942 0.0850004 -0.0349996">
+      <inertial pos="0.0361868 0.0278988 2.624e-05" quat="-0.107675 0.684864 0.175585 0.698955" mass="1.65955" diaginertia="0.00238848 0.00237607 0.00100349"/>
+      <joint name="FL_H1_L_j1" pos="0 0 0" axis="1 0 0" range="-0.5236 0.5236" actuatorfrcrange="-60 60"/>
+      <geom size="0.05 0.05 0.03" pos="0.02 0 0" type="box" rgba="1 1 1 1"/>
+      <body name="FL_H2_L" pos="0.053 0.08875 0">
+        <inertial pos="0.0001072 0.01365 -0.191278" quat="0.697376 0.0567693 -0.0553104 0.71231" mass="1.58656" diaginertia="0.01735 0.0171137 0.00078396"/>
+        <joint name="FL_H2_L_j2" pos="0 0 0" axis="0 1 0" range="-0.7854 0.7854" actuatorfrcrange="-60 60"/>
+        <geom size="0.04 0.11" pos="0 0 -0.12" type="cylinder" rgba="0.866667 0.909804 1 1"/>
+        <body name="FL_K_L" pos="0 -0.033 -0.25">
+          <inertial pos="0.00034449 0.00755602 -0.133564" quat="0.707725 -0.0189975 0.0214025 0.705909" mass="0.793387" diaginertia="0.011157 0.0110245 0.00050331"/>
+          <joint name="FL_K_L_j3" pos="0 0 0" axis="0 -1 0" range="-2.0944 2.0944" actuatorfrcrange="-60 60"/>
+          <geom size="0.035 0.11" pos="0 0 -0.12" type="cylinder" rgba="0.866667 0.909804 1 1"/>
+          <body name="FL_W_L" pos="0 0.062 -0.25">
+            <inertial pos="0 -0.00390569 0" quat="0.707107 0 0 0.707107" mass="0.650124" diaginertia="0.00242814 0.00134138 0.00134138"/>
+            <joint name="FL_W_L_j4" pos="0 0 0" axis="0 -1 0" actuatorfrcrange="-14 14"/>
+            <geom size="0.086 0.025" quat="0.707107 0.707107 0 0" type="cylinder" rgba="1 1 1 1"/>
+          </body>
+        </body>
+      </body>
+    </body>
+    <body name="FR_H1_L" pos="0.250942 -0.0849996 -0.0349996">
+      <inertial pos="0.0361239 -0.0278988 2.621e-05" quat="0.107342 0.684614 -0.176709 0.698967" mass="1.65955" diaginertia="0.00238496 0.00237343 0.00100261"/>
+      <joint name="FR_H1_L_j1" pos="0 0 0" axis="1 0 0" range="-0.5236 0.5236" actuatorfrcrange="-60 60"/>
+      <geom size="0.05 0.05 0.03" pos="0.02 0 0" type="box" rgba="1 1 1 1"/>
+      <body name="FR_H2_L" pos="0.053 -0.08875 0">
+        <inertial pos="-0.0002839 -0.01365 -0.191232" quat="0.708793 -0.0572103 0.0548399 0.700951" mass="1.58656" diaginertia="0.0173409 0.0171048 0.000784345"/>
+        <joint name="FR_H2_L_j2" pos="0 0 0" axis="0 -1 0" range="-0.7854 0.7854" actuatorfrcrange="-60 60"/>
+        <geom size="0.04 0.11" pos="0 0 -0.12" type="cylinder" rgba="0.866667 0.909804 1 1"/>
+        <body name="FR_K_L" pos="0 0.033 -0.25">
+          <inertial pos="0.00034455 -0.00936192 -0.133564" quat="0.706336 0.0158608 -0.0134321 0.707572" mass="0.793387" diaginertia="0.0111406 0.0109975 0.000493312"/>
+          <joint name="FR_K_L_j3" pos="0 0 0" axis="0 1 0" range="-2.0944 2.0944" actuatorfrcrange="-60 60"/>
+          <geom size="0.035 0.11" pos="0 0 -0.12" type="cylinder" rgba="0.866667 0.909804 1 1"/>
+          <body name="FR_W_L" pos="0 -0.066 -0.25">
+            <inertial pos="0 0.00390569 0" quat="0.707107 0 0 0.707107" mass="0.650124" diaginertia="0.00242814 0.00134138 0.00134138"/>
+            <joint name="FR_W_L_j4" pos="0 0 0" axis="0 1 0" actuatorfrcrange="-14 14"/>
+            <geom size="0.086 0.025" quat="0.707107 0.707107 0 0" type="cylinder" rgba="1 1 1 1"/>
+          </body>
+        </body>
+      </body>
+    </body>
+    <body name="RL_H1_L" pos="-0.253058 0.0850004 -0.0349996">
+      <inertial pos="-0.0361239 0.0278988 2.621e-05" quat="0.176709 0.698967 -0.107342 0.684614" mass="1.65955" diaginertia="0.00238496 0.00237343 0.00100261"/>
+      <joint name="RL_H1_L_j1" pos="0 0 0" axis="-1 0 0" range="-0.5236 0.5236" actuatorfrcrange="-60 60"/>
+      <geom size="0.05 0.05 0.03" pos="0.02 0 0" type="box" rgba="1 1 1 1"/>
+      <body name="RL_H2_L" pos="-0.053 0.08775 0">
+        <inertial pos="0.000146 0.01365 -0.191232" quat="0.696139 0.0564767 -0.055604 0.713519" mass="1.58656" diaginertia="0.0173411 0.0171047 0.000784379"/>
+        <joint name="RL_H2_L_j2" pos="0 0 0" axis="0 1 0" range="-0.7854 0.7854" actuatorfrcrange="-60 60"/>
+        <geom size="0.04 0.11" pos="0 0 -0.12" type="cylinder" rgba="0.866667 0.909804 1 1"/>
+        <body name="RL_K_L" pos="0 -0.033 -0.25">
+          <inertial pos="0.00034383 0.00755602 -0.133585" quat="0.70764 -0.0190181 0.0213914 0.705994" mass="0.793387" diaginertia="0.0111526 0.0110201 0.000503401"/>
+          <joint name="RL_K_L_j3" pos="0 0 0" axis="0 -1 0" range="-2.0944 2.0944" actuatorfrcrange="-60 60"/>
+          <geom size="0.035 0.11" pos="0 0 -0.12" type="cylinder" rgba="0.866667 0.909804 1 1"/>
+          <body name="RL_W_L" pos="0 0.062 -0.25">
+            <inertial pos="0 -0.00390569 0" quat="0.707107 0 0 0.707107" mass="0.650124" diaginertia="0.00242814 0.00134138 0.00134138"/>
+            <joint name="RL_W_L_j4" pos="0 0 0" axis="0 -1 0" actuatorfrcrange="-14 14"/>
+            <geom size="0.086 0.025" quat="0.707107 0.707107 0 0" type="cylinder" rgba="1 1 1 1"/>
+          </body>
+        </body>
+      </body>
+    </body>
+    <body name="RR_H1_L" pos="-0.253058 -0.0849996 -0.0349996">
+      <inertial pos="-0.0361868 -0.0278988 2.624e-05" quat="-0.175585 0.698955 0.107675 0.684864" mass="1.65955" diaginertia="0.00238848 0.00237607 0.00100349"/>
+      <joint name="RR_H1_L_j1" pos="0 0 0" axis="-1 0 0" range="-0.5236 0.5236" actuatorfrcrange="-60 60"/>
+      <geom size="0.05 0.05 0.03" pos="0.02 0 0" type="box" rgba="1 1 1 1"/>
+      <body name="RR_H2_L" pos="-0.053 -0.08875 0">
+        <inertial pos="9.944e-05 -0.01365 -0.191278" quat="0.712529 -0.0554258 0.0566523 0.697152" mass="1.58656" diaginertia="0.01735 0.0171136 0.000783992"/>
+        <joint name="RR_H2_L_j2" pos="0 0 0" axis="0 -1 0" range="-0.7854 0.7854" actuatorfrcrange="-60 60"/>
+        <geom size="0.04 0.11" pos="0 0 -0.12" type="cylinder" rgba="0.866667 0.909804 1 1"/>
+        <body name="RR_K_L" pos="0 0.033 -0.25">
+          <inertial pos="0.00034455 -0.00755602 -0.133564" quat="0.705907 0.0214037 -0.0189974 0.707726" mass="0.793387" diaginertia="0.011157 0.0110242 0.000503589"/>
+          <joint name="RR_K_L_j3" pos="0 0 0" axis="0 1 0" range="-2.0944 2.0944" actuatorfrcrange="-60 60"/>
+          <geom size="0.035 0.11" pos="0 0 -0.12" type="cylinder" rgba="0.866667 0.909804 1 1"/>
+          <body name="RR_W_L" pos="0 -0.062 -0.25">
+            <inertial pos="0 0.00390569 0" quat="0.707107 0 0 0.707107" mass="0.650124" diaginertia="0.00242814 0.00134138 0.00134138"/>
+            <joint name="RR_W_L_j4" pos="0 0 0" axis="0 1 0" actuatorfrcrange="-14 14"/>
+            <geom size="0.086 0.025" quat="0.707107 0.707107 0 0" type="cylinder" rgba="1 1 1 1"/>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

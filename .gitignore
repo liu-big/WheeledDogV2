@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+
+# Training / sim artifacts (weights under checkpoints/ are tracked)
+*.pt
+*.pth
+*.onnx
+!checkpoints/*.pt
+!checkpoints/**/*.pt
+logs/
+outputs/
+*.log
+*.pid
+MUJOCO_LOG.TXT
+.tensorboard*/
+demo_out/
+
+# Isaac / local installs (clone separately)
+IsaacLab/
+_isaac_sim/
+isaacsim/
+
+# Editor / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+*~
+
+# Recovery / scratch
+_recover_tmp/
+checkpoints_backup/
+*.tar.gz
